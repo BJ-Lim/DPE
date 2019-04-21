@@ -120,3 +120,11 @@ IGMP, ICMP, IP, ARP | Network(IP) | Network
   - 에러 정정 기능 포함
   - 연속적 데이터 전송 가능
   - 역채널 사용 안함
+- VoIP(Voice over Internet Protocol) : 음성 인터넷 프로토콜
+  - 프로토콜 : SIP(Session Initiation Protocol, 세션 개시 프로토콜), H.323, Megaco
+- SIGTRAN : 유선 전화망(PSTN : Public Switched Telephone Network, 공중교환전화망)과 인터넷 망(IP Network)를 상호 연동시키는데 사용되는 시그널링 프로토콜
+- RARP(Reverse Address Resolution Protocol, 역순 주소 결정 프로토콜) : 물리 네트워크 주소로 논리 IP 주소를 얻기위해 사용되는 프로토콜
+- 해밍코드 : 이진 선형 블록 오류 정정 부호의 일종
+  - 특징 : 2비트 오류 감지 및 1비트 오류 수정 가능
+  - 수식 : { 2 }^{ k }-k-1\quad >=\quad n
+  
