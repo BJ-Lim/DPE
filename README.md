@@ -38,6 +38,11 @@
 ## 운영체제
 - 디스크 스케줄링
   - [link](https://m.blog.naver.com/jevida/140193949948)
+  - FCFS(First - Come - First - Served) : 선입선출, 단순하며 이동거리 김
+  - SSTF(Shortest Seek Time First) : 탐색 시간이 가장 적을 수 있는 가까운 cylinder로 이동
+  - SCAN : 시작 -> 0 -> 끝 -> 0 순으로 지나가며 모두 탐색
+  - C-SCAN : 시작 -> 끝 --> 0 -> 끝 --> 0 순으로 지나가며 모두 탐색.(-->은 탐색하지 않고 바로 이동)
+  - Look : 0과 끝이 아닌, 큐 내에서의 최솟값과 최댓값 범위에서 이동하며 작동은 SCAN과 동일
 
 ## 소프트웨어공학
 
