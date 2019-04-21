@@ -27,7 +27,7 @@
 
 ## 전자계산기구조
 - 메이저 상태
-  - [link](https://blog.naver.com/davidoff73/30033148868)
+  - [link](https://blog.naver.com/davidoff73/30033148868) : 그림으로 보기
 - RAM
 
   종류 | 속도 | refresh | 집적도 | 회로구조 | 용량 | 가격 | 용도 | 전력소모
@@ -37,7 +37,7 @@
 
 ## 운영체제
 - 디스크 스케줄링
-  - [link](https://m.blog.naver.com/jevida/140193949948)
+  - [link](https://m.blog.naver.com/jevida/140193949948) : 그림으로 보기
   - FCFS(First - Come - First - Served) : 선입선출, 단순하며 이동거리 김
   - SSTF(Shortest Seek Time First) : 탐색 시간이 가장 적을 수 있는 가까운 cylinder로 이동
   - SCAN : 시작 -> 0 -> 끝 -> 0 순으로 지나가며 모두 탐색
