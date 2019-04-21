@@ -132,4 +132,13 @@ IGMP, ICMP, IP, ARP | Network(IP) | Network
   - 구문(Syntax)
   - 의미(Semantics)
   - 순서(Timing)
-
+- FLSM(Fixed-Length Subnet Masking) : 같은 주 네트워크가 같은 크기로 나뉘어진 경우에만 라우팅 업데이트를 해주는 방식
+- QPSK(Quadrature Phase Shift Keying) : 위상변화를 90도씩 변화를 주는 4진 PSK 방식(효율 2배)
+  - [link](http://www.ktword.co.kr/abbr_view.php?m_temp1=1150)
+- X.25 프로토콜
+  - 구성 계층 : 물리(1계층), 링크(2계층), 패킷 계층(3계층)
+- 아날로그 변조 방식
+  - AM(Amplitude Modulation, 진폭 변조)
+  - FM(Frequency Modulation, 주파수 변조)
+  - PM(Phase Modulation, 위상 변조)
+  
