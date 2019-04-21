@@ -128,5 +128,8 @@ IGMP, ICMP, IP, ARP | Network(IP) | Network
   - 특징 : 2비트 오류 감지 및 1비트 오류 수정 가능
   - 수식 : ![Style_Images](https://github.com/BJ-Lim/DPE/blob/master/captures/%EC%88%98%EC%8B%9D.png)
     - k = 해밍 비트수, n = 정보 비트수
-  
+- 프로토콜의 기본 구성 요소
+  - 구문(Syntax)
+  - 의미(Semantics)
+  - 순서(Timing)
 
