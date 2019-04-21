@@ -126,6 +126,7 @@ IGMP, ICMP, IP, ARP | Network(IP) | Network
 - RARP(Reverse Address Resolution Protocol, 역순 주소 결정 프로토콜) : 물리 네트워크 주소로 논리 IP 주소를 얻기위해 사용되는 프로토콜
 - 해밍코드 : 이진 선형 블록 오류 정정 부호의 일종
   - 특징 : 2비트 오류 감지 및 1비트 오류 수정 가능
-  - 수식
-  []()
+  - 수식 : ![Style_Images](https://github.com/BJ-Lim/DPE/blob/master/captures/%EC%88%98%EC%8B%9D.png)
+    - k = 해밍 비트수, n = 정보 비트수
+  
 
