@@ -80,4 +80,43 @@
   - 인터페이스 단순화 가능
   - 변경 발생시 파급효과 적음
 - 자료사전의 '{}' 은 반복을 의미
+- COCOMO(Constructive Cost Model) : 시스템의 비용을 산정하기 위해 시스템을 구성하고 있는 모듈과 서브 시스템의 비용 합계를 계산하는 방식
+  - 특징 : 비용 예측, 의존성, 유연성, 이용성
+  - 모델 유형 : 기본형, 중간형, 발전형
+  - 모델 프로젝트 유형
+    - organic(유기적) Mode : 50,000 코드 라인(50KDSI) 이하
+      - KDSI(Kilo Delivered Source Instruction) : 전체 라인수를 1000라인 단위로 묶은 것으로, KLOC(Kilo LOC)와 같다
+    - Semidetached Mode(반 결합 모드 프로젝트) : 300,000 코드 라인 정도
+    - Embedded Mode(내장모드 프로젝트) : 300,000 코드 라인 이상의 대형 프로젝트
+- Rumbaugh의 모델링
+  - 상태도 : 동적 모델링
+  - 자료흐름도 : 기능 모델링
 ## 데이터통신
+- HDLC(High-level Data Link Control)
+  - 프레임 구조 : Flag - Address - Control - Data - Frame Check Sequence - Flag
+- CDMA(Code Division Multiple Access)
+  - 특징
+    - 시스템의 포화 상태로 인한 통화 단절 및 혼선이 적다
+    - 실내 또는 실외에서 넓은 서비스 권역을 제공한다
+    - 배경 잡음을 방지하고 감쇄시킴으로써 우수한 통화 품질을 제공한다
+    - 산악 지형 또는 혼잡한 도심 지역에서도 품질이 떨어지지 않는다.
+- 계층 구조
+
+주요 프로토콜 | TCP/IP 프로토콜 계층 모델 | OSI 계층 모델
+---- | ---- | ----
+TELNET, FTP, SNMP, DHCP | Application | Application, Presentation, Session
+SCTP, TCP, UDP | Transport | Transport
+IGMP, ICMP, IP, ARP | Network(IP) | Network
+\- | Data Link | Data Link
+\- | Physical | Physical
+
+- 나이키스트 표본화 정리
+  - 표본화 주기(T) = 1 / 2* 최고주파수(W)
+    - <=> 표본화 주파수 = 최고주파수 * 2
+- PAD(Packet Assembler/Disassembler)
+- 터널링 : IPv6 데이터그램을 IPv4 패킷에 캡슐화하여 IPv4 라우팅 토폴로지 영역을 통해 전송하는 방법
+- FEC(Forward Error Correction) : 전진 에러 수정
+  - [link](http://blog.naver.com/PostView.nhn?blogId=wlsqor2&logNo=40019966587&redirect=Dlog&widgetTypeCall=true)
+  - 에러 정정 기능 포함
+  - 연속적 데이터 전송 가능
+  - 역채널 사용 안함
