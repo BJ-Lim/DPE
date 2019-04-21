@@ -21,7 +21,8 @@
   3 | 논리적 설계   | - | -
   4 | 물리적 설계   | - | -
   5 | 구현         | -  | -
-
+- 정렬
+  - [link](https://github.com/BJ-Lim/Algorithm_Practice/blob/master/concept/sorts.md)
 
 
 ## 전자계산기구조
