@@ -209,6 +209,7 @@
   - 객체 모델링(Object) : 객체도 작성, 정보모델링이라고도 함, 시스템에 요구되는 객체를 찾아내어 속성과 연산 식별 및 객체들 간의 관계를 규정
   - 동적 모델링(Dynamic) : 상태도 작성, 시간에 흐름을 따른 객체들 사이의 제어 흐름, 상호작용, 동작 순서 등의 동적인 행위 표현
   - 기능 모델링(Functional) : 자료흐름도를 이용하여 처리과정을 표현
+
 ## 데이터통신
 - HDLC(High-level Data Link Control)
   - 프레임 구조 : Flag - Address - Control - Data - Frame Check Sequence - Flag
@@ -285,4 +286,4 @@ IGMP, ICMP, IP, ARP | Network(IP) | Network
 - 양자화 step(양자화 레벨) = 2^(표본당 전송 비트수)
 - 나이키스트 정리
   - 채널 용량 = 주파수 대역폭 x log2(1+s/n)
-  
+- ARQ(Automatic Repeat Request, 자동 재전송 요청) : 오류가 발생한 프레임을 재전송하는 오류제어방식
