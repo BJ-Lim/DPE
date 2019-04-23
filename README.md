@@ -287,3 +287,11 @@ IGMP, ICMP, IP, ARP | Network(IP) | Network
 - 나이키스트 정리
   - 채널 용량 = 주파수 대역폭 x log2(1+s/n)
 - ARQ(Automatic Repeat Request, 자동 재전송 요청) : 오류가 발생한 프레임을 재전송하는 오류제어방식
+- NRZ(None Return to Zero) 전송 부호
+  
+  종류 | 1 | 0
+  ---- | ---- | ----
+  NRZ-L(None Return to Zero - Level) | High | Low
+  NRZ-I(None Return to Zero - Inverted) | low 전압 | high 전압
+  NRZ-M(None Return to Zero - Mark) | 전압변환 | 전압변환x
+  NRZ-S(None Return to Zero - Space) | 전압변환x | 전압변환
