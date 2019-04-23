@@ -251,6 +251,9 @@ IGMP, ICMP, IP, ARP | Network(IP) | Network
   - 특징 : 2비트 오류 감지 및 1비트 오류 수정 가능
   - 수식 : ![Style_Images](https://github.com/BJ-Lim/DPE/blob/master/captures/%EC%88%98%EC%8B%9D.png)
     - k = 해밍 비트수, n = 정보 비트수
+  - 해밍 거리
+    - 수식 : 해밍거리 >= 2n + 1
+    - n = 정정 가능한 최대 오류 개수
 - 프로토콜의 기본 구성 요소
   - 구문(Syntax)
   - 의미(Semantics)
@@ -287,11 +290,14 @@ IGMP, ICMP, IP, ARP | Network(IP) | Network
 - 나이키스트 정리
   - 채널 용량 = 주파수 대역폭 x log2(1+s/n)
 - ARQ(Automatic Repeat Request, 자동 재전송 요청) : 오류가 발생한 프레임을 재전송하는 오류제어방식
+  - Stop and Wait : 한 번에 하나씩 ACK를 받고, 후속 데이터 전송
+  - Go-back-N(슬라이딩 윈도우) : 한번에 여러 개를 보낸후 하나의 ACK를 받고, 후속 데이터 전송
+  - Selective-Repeat : 오류가 발생된(NAK) 프레임 이후 또는 오류 발생된 프레임 만을 재전송
 - NRZ(None Return to Zero) 전송 부호
   
   종류 | 1 | 0
   ---- | ---- | ----
   NRZ-L(None Return to Zero - Level) | High | Low
-  NRZ-I(None Return to Zero - Inverted) | low 전압 | high 전압
-  NRZ-M(None Return to Zero - Mark) | 전압변환 | 전압변환x
-  NRZ-S(None Return to Zero - Space) | 전압변환x | 전압변환
+  NRZ-I(None Return to Zero - Inverted) | 이전 레벨 반전 | 이전 레벨 유지
+  NRZ-M(None Return to Zero - Mark) | 이전 레벨 반전 | 이전 레벨 유지
+  NRZ-S(None Return to Zero - Space) | 이전 레벨 유지 | 이전 레벨 반전
