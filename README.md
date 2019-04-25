@@ -415,8 +415,8 @@ IGMP, ICMP, IP, ARP | Network(IP) | Network
   - 수식 : ![Style_Images](https://github.com/BJ-Lim/DPE/blob/master/captures/%EC%88%98%EC%8B%9D.png)
     - k = 해밍 비트수, n = 정보 비트수
   - 해밍 거리
-    - 수식 : 해밍거리 >= 2n + 1
-    - n = 정정 가능한 최대 오류 개수
+    - 검출 가능한 오류 갯수 : 해밍거리 - 1
+    - 정정 가능한 최대 오류 개수(n) : 해밍거리 >= 2n + 1
 - 프로토콜의 기본 구성 요소
   - 구문(Syntax)
   - 의미(Semantics)
@@ -477,3 +477,30 @@ IGMP, ICMP, IP, ARP | Network(IP) | Network
   - 표본화(Sampling) : 일정 시간 간격으로 아날로그 신호의 순간적인 값을 취하는 것
   - 양자화(Quantization) : 진폭에 따라 이산적인 각각의 대푯값으로 변환 하는 것
   - 부호화(Coding) : 0과 1의 이진수로 표현하는 것
+- 축적교환방식
+  - 송신측에서 전송한 데이터를 송신 측 교환기에 저장시켰다가 이를 다시 적절한 통신 경로를 선택하여 수신 측 터미널에 전송하는 방식
+  - 종류
+    - 메시지 교환방식
+    - 패킷 교환 방식
+      - 가상회선방식
+      - 데이터그램방식
+- 회선교환방식
+  - 통신을 원하는 두 지점을 교환기를 이용하여 물리적으로 접속시키는 방식
+- OSPF(Open Shortest Path First, 최단 경로 우선 프로토콜)
+  - 인터넷 프로토콜(IP) 네트워크를 위한 링크 스테이트 라우팅 프로토콜
+  - 멀티캐스팅 지원
+  - 네트워크 변화에 신속하게 대처 가능
+  - 최단 경로 탐색에 Dijkstra 알고리즘 사용
+- Hand off : 이동통신 가입자가 셀 경계를 지나면서 신호의 세기가 작아지거나 간섭이 발생하여 통신 품질이 떨어져 현재 사용 중인 채널을 끊고 다른 채널로 이동하는 것
+- ATM cell의 크기
+  - 1 옥텟 = 8비트
+  - 헤더 = 5 옥텟, payload(유로부하) = 48 옥텟
+- SONET(Synchronous Optical Network)
+  - 광전송망 노드와 망간의 접속을 표준화한 것
+  - 다양한 전송기기를 상호 접속하기 위한 광 신호와 인터페이스 표준 제공
+  - STS-12의 기본 전송속도는 622.08MBbps
+- 동기식 문자 지향 프로토콜의 제어문자
+  - SOH(Start Of Heading) : 헤딩의 시작
+  - STX(Start of Text) : 헤딩의 종료 및 본문의 시작
+  - SYN(SYNchronous Idle) : 문자 동기
+  - DLE(Data Link Escape) : 제어 문자 앞에 삽입
