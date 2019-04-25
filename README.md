@@ -375,6 +375,10 @@
     - NRM(Normal Response Mode, 정규 응답 모드) : 반이중 / 점대점, 다중점 링크 / 불균형
     - ARM(Asynchronous Response Mode, 비동기 응답 모드) : 전이중 / 점대정 / 불균형
     - ABM(Asynchronous Balanced Mode, 비동기 균형 모드) : 전이중 / 점대점 / 균형
+  - 프레임 종류
+    - I-Frame(Information, 정보프레임) : 제어부가 0으로 시작하는 프레임, 사용자가 데이터를 전달하거나 피기백킹 기법을 통해 데이터에 대한 확인 응답을 보낼 때사용
+    - S-Frame (Supervisory, 감독프레임) : 제어부가 10으로 시작하는 프레임,오류 제어와 흐름 제어를 위해 사용
+    - U-Frame (Unnumbered, 비번호프레임) : 제어부가 11로 시작하는 프레임,링크와 동작 모두 설정과 관리, 오류 회복을 수행함
 - CDMA(Code Division Multiple Access)
   - 특징
     - 시스템의 포화 상태로 인한 통화 단절 및 혼선이 적다
@@ -404,6 +408,7 @@ IGMP, ICMP, IP, ARP | Network(IP) | Network
 - VoIP(Voice over Internet Protocol) : 음성 인터넷 프로토콜
   - 프로토콜 : SIP(Session Initiation Protocol, 세션 개시 프로토콜), H.323, Megaco
 - SIGTRAN : 유선 전화망(PSTN : Public Switched Telephone Network, 공중교환전화망)과 인터넷 망(IP Network)를 상호 연동시키는데 사용되는 시그널링 프로토콜
+- ARP(Address Resolution Protocol, 주소 결정 프로토콜)
 - RARP(Reverse Address Resolution Protocol, 역순 주소 결정 프로토콜) : 물리 네트워크 주소로 논리 IP 주소를 얻기위해 사용되는 프로토콜
 - 해밍코드 : 이진 선형 블록 오류 정정 부호의 일종
   - 특징 : 2비트 오류 감지 및 1비트 오류 수정 가능
@@ -459,3 +464,16 @@ IGMP, ICMP, IP, ARP | Network(IP) | Network
   NRZ-I(None Return to Zero - Inverted) | 이전 레벨 반전 | 이전 레벨 유지
   NRZ-M(None Return to Zero - Mark) | 이전 레벨 반전 | 이전 레벨 유지
   NRZ-S(None Return to Zero - Space) | 이전 레벨 유지 | 이전 레벨 반전
+
+- IPv6
+  - Broadcast 주소 없음
+- 이더넷의 기본 규격
+  - ex) 10Base-5
+  - 10 : 전송속도 = 10Mbps
+  - Base : baseband
+  - 전송매체 : 굵은 동축케이블
+  - 5 : 한 세그먼트 최대 전송거리는 500m
+- PCM(Pulse Code Modulation) 순서(변조 과정) : 표본화 - 양자화 - 부호화
+  - 표본화(Sampling) : 일정 시간 간격으로 아날로그 신호의 순간적인 값을 취하는 것
+  - 양자화(Quantization) : 진폭에 따라 이산적인 각각의 대푯값으로 변환 하는 것
+  - 부호화(Coding) : 0과 1의 이진수로 표현하는 것
