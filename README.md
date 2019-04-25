@@ -310,6 +310,7 @@
   - 하향식 통합 테스트 수행을 위해 일시적으로 필요한 조건만을 가지고 임시로 제공되는 시험용
 - CASE(Computer-aided software engineering)
   - 소프트웨어, 하드웨어, 데이터베이스, 테스트 등을 통합하여 소프트웨어를 개발하는 환경을 조겅한다는 의미
+  - 주요 기능 : 소프트웨어 생명주기 전 단계의 연결, 다양한 소프트웨어 개발 모형 지원, 그래픽 지원 등
 - NS(Nassi-Schneiderman) Chart
   - 논리의 기술에 중점을 두고 도형을 이용한 표현 방법
   - 이해하기 쉽고 코드로 변환이 용이
@@ -328,9 +329,6 @@
       - KDSI(Kilo Delivered Source Instruction) : 전체 라인수를 1000라인 단위로 묶은 것으로, KLOC(Kilo LOC)와 같다
     - Semidetached Mode(반 결합 모드 프로젝트) : 300,000 코드 라인 정도
     - Embedded Mode(내장모드 프로젝트) : 300,000 코드 라인 이상의 대형 프로젝트
-- Rumbaugh의 모델링
-  - 상태도 : 동적 모델링
-  - 자료흐름도 : 기능 모델링
 - 결합도(coupling) : 어떤 모듈이 다른 모듈에 의존하는 정도, 약할수록 이상적
   - 순서(약->강) : 자료 - 스탬프 - 제어 - 외부 - 공통 - 내용
   - 암기법 : (자)(스)니까 합격(제)(외) (공)부는 (내)처럼
@@ -351,16 +349,25 @@
   - 시간적 응집도(Temporal Cohension) : 연관된 기능이라기 보단 특정 시간에 처리되어야 하는 활동들을 한 모듈에서 처리할 경우
   - 논리적 응집도(Logical Cohension) : 유사한 성격을 갖거나 특정 형태로 분류되는 처리 요소들이 한 모듈에서 처리되는 경우
   - 우연적 응집도(Coincidental Cohension) : 모듈 내부의 각 구성요소들이 연관이 없을 경우
-- 럼바우 분석 기법
+- 럼바우(Rumbaugh) 분석 기법
   - 객체 모델링(Object) : 객체도 작성, 정보모델링이라고도 함, 시스템에 요구되는 객체를 찾아내어 속성과 연산 식별 및 객체들 간의 관계를 규정
   - 동적 모델링(Dynamic) : 상태도 작성, 시간에 흐름을 따른 객체들 사이의 제어 흐름, 상호작용, 동작 순서 등의 동적인 행위 표현
   - 기능 모델링(Functional) : 자료흐름도를 이용하여 처리과정을 표현
 - Putnam 모형 : 소프트웨어 생명 주기의 전 과정 동안 사용될 노력의 분포를 가정하는 모형
 - 기능점수(FP) 모형 : Albrecht가 제안한 것, 소프트웨어의 기능을 증대시키는 요인별로 가중치를 부여하고, 요인별 가중치를 합산하여 총 기능을 점수를 산출함.총 기능 점수와 영향도를 이용하여 기능 점수(FP)를 구한 후, 이를 이용해서 비용을 산정하는 기법
-- 자동화 추정 도구 : 비용 산정의 자동화를 위해 개발된 도구로는 SLIM과 ESTIMACS가 있다.
+- 자동화 추정 도구 : 비용 산정의 자동화를 위해 개발된 도구로는 SLIM과 ESTIMACS가 존재
   - SLIM : Rayleigh - Norden 곡선과 Putnam 예측 모델을 기초로 하여 개발된 자동화 추정 도구
   - ESTIMACS : 다양한 프로젝트와 개인별 요소를 수용하도록 FP 모형을 기초로 하여 개발된 자동화 추정 도구
-
+- 객체 지향 분석 방법론
+  - Booch 방법 : 미시적(Micro), 거시적(Macro) 개발 프로세스를 모두 사용하는 분석 방법으로, 클래스와 객체들을 분석 및 식별하고 클래스의 속성과 연산을 정의
+  - Jacobson 방법 : Use Case를 강조하여 사용하는 분석 방법
+  - code와 yourdon 방법 : E-R 다이어그램을 사용하여 객체의 행위를 모델링하며, 객체 식별, 구조식별, 주제 정의, 속성과 인스턴스 연결 정의, 연산과 메시지 연결 정의 등의 과정으로 구성
+  - Wirfs-Brock 방법 : 분석과 설계 간의 구분이 없고, 고객 명세서를 평가해서 설계 작업까지 연속적으로 수행하는 기법
+- 나선형 모델
+  - 개발 순서 : 계획 및 정의(Planning) -> 위험분석(Risk Analysis) -> 공학적개발(Engineering) -> 고객평가(Customer Evaluation)
+  - [참고](https://m.blog.naver.com/PostView.nhn?blogId=seilius&logNo=130185846022&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
+- CPM(Critical Path Method)의 임계 경로 : 가장 오래 걸리는 경로
+  
 ## 데이터통신
 - HDLC(High-level Data Link Control)
   - 프레임 구조 : Flag - Address - Control - Data - Frame Check Sequence - Flag
