@@ -597,3 +597,14 @@ IGMP, ICMP, IP, ARP | Network(IP) | Network
   - STX(Start of Text) : 헤딩의 종료 및 본문의 시작
   - SYN(SYNchronous Idle) : 문자 동기
   - DLE(Data Link Escape) : 제어 문자 앞에 삽입
+- 오류 정정 방식
+  - 전진오류정정(FEC, Forward Error Correction)
+    - 재전송 요구 없이 수신측에서 스스로 오류검사 및 수정을 하는 방식
+    - 역채널이 필요 없고, 연속적인 데이터 흐름이 가능하다.
+    - 블록 코드와 콘볼루션 코드도 FEC 코드의 종류이다.
+  - 후진오류수정(BEC, Backward Error Correction)
+    - 데이터 전송 과정에서 오류가 발생하면 송신 측에 재전송을 요구하는 방식
+- 라우팅 테이블이 가지고 있는 경로 정보
+  - 다음 홉
+  - 메트릭 : 계산된 수치 값
+  - 수신지 네트워크 주소
