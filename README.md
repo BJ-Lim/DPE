@@ -793,3 +793,6 @@ IGMP, ICMP, IP, ARP | Internet | Network
   - IEEE802.6 : 도시형 통신망(MAN)
   - IEEE802.11 : 무선 LAN
   - IEEE802.15 : 블루투스
+- DCF(Distributed Coordination Function)
+  - 경쟁에 의해 채널 접근을 제어
+  - 무선 LAN의 매체 접근 제어 방식
