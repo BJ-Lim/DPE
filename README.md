@@ -629,6 +629,7 @@
 ## 데이터통신
 - HDLC(High-level Data Link Control)
   - 프레임 구조 : Flag - Address - Control - Data - Frame Check Sequence - Flag
+    - FCS : 전송 오류 검출
   - 모드
     - NRM(Normal Response Mode, 정규 응답 모드) : 반이중 / 점대점, 다중점 링크 / 불균형
     - ARM(Asynchronous Response Mode, 비동기 응답 모드) : 전이중 / 점대정 / 불균형
@@ -645,13 +646,12 @@
     - 산악 지형 또는 혼잡한 도심 지역에서도 품질이 떨어지지 않는다.
 - 계층 구조
 
-주요 프로토콜 | TCP/IP 프로토콜 계층 모델 | OSI 계층 모델
+주요 프로토콜 | TCP/IP 4 Layer | OSI 7 Layer
 ---- | ---- | ----
 TELNET, FTP, SNMP, DHCP | Application | Application, Presentation, Session
 SCTP, TCP, UDP | Transport | Transport
-IGMP, ICMP, IP, ARP | Network(IP) | Network
-\- | Data Link | Data Link
-\- | Physical | Physical
+IGMP, ICMP, IP, ARP | Internet | Network
+\- | Network Access Layer | Data Link, Physical
 
 - 나이키스트 표본화 정리
   - 표본화 주기(T) = 1 / 2* 최고주파수(W)
