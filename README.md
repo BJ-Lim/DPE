@@ -635,9 +635,9 @@ IGMP, ICMP, IP, ARP | Network(IP) | Network
     - 검출 가능한 오류 갯수 : 해밍거리 - 1
     - 정정 가능한 최대 오류 개수(n) : 해밍거리 >= 2n + 1
 - 프로토콜의 기본 구성 요소
-  - 구문(Syntax)
-  - 의미(Semantics)
-  - 순서(Timing)
+  - 구문(Syntax) : 데이터의 형식이나 신호로 부호화 방법 등을 정의
+  - 의미(Semantics) : 오류 제어, 동기 제어, 흐름 제어 같은 각종 제어 절차에 관한 제어 정보를 정의
+  - 순서(Timing) : 송/수신자 간 혹은 양단의 통신 시스템과 망 사이의 통신 속도나 순서 등을 정의
 - FLSM(Fixed-Length Subnet Masking) : 같은 주 네트워크가 같은 크기로 나뉘어진 경우에만 라우팅 업데이트를 해주는 방식
 - QPSK(Quadrature Phase Shift Keying) : 위상변화를 90도씩 변화를 주는 4진 PSK 방식(효율 2배)
   - [link](http://www.ktword.co.kr/abbr_view.php?m_temp1=1150)
@@ -684,6 +684,8 @@ IGMP, ICMP, IP, ARP | Network(IP) | Network
 
 - IPv6
   - Broadcast 주소 없음
+  - 유니캐스트, 멀티캐스트, 애니캐스트를 지원
+  - 128비트
 - 이더넷의 기본 규격
   - ex) 10Base-5
   - 10 : 전송속도 = 10Mbps
@@ -735,8 +737,18 @@ IGMP, ICMP, IP, ARP | Network(IP) | Network
     - 최단 경로 탐색에 Dijkstra 알고리즘 사용
     - 홉수의 제한이 없어서 대규모 네트워크에 적합
   - RIP(Routing Information Protocol, 라우팅 정보 프로토콜)
+    - 거리 벡터 라우팅 프로토콜이라고도 한다
     - UDP/IP 상에서 동작하는 라우팅 프로토콜
     - 소규모 네트워크에 적합
     - 최대 홉수는 15
   - BGP(Border Gateway Protocol)
     - 자치시스템 상호 간에 적용되는 라우팅 프로토콜
+- IEEE
+  - IEEE802.1 : 전체의 구성
+  - IEEE802.2 : 논리 링크 제어(LLC) 계층
+  - IEEE802.3 : CSMA/CD
+  - IEEE802.4 : Token Bus
+  - IEEE802.5 : Token Ring
+  - IEEE802.6 : 도시형 통신망(MAN)
+  - IEEE802.11 : 무선 LAN
+  - IEEE802.15 : 블루투스
